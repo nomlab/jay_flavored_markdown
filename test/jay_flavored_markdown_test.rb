@@ -14,7 +14,7 @@ class JayFlavoredMarkdownTest < Minitest::Test
 
   #文字列の下行の '-' の入力が，2段階見出しの出力になる問題を検証するテスト
   def test_that_it_should_get_hyphen_below_string
-    assert_equal JayFlavoredMarkdownToPlainTextConverter.new("aaa\n-").content, "aaa\n-"
+    assert_equal JayFlavoredMarkdownToPlainTextConverter.new("aaa\n-").content, "1.1 aaa"
   end
 
   #項番付きリストの下行の項番なしリストの入力が，項番付きリストの出力になる問題を検証するテスト
