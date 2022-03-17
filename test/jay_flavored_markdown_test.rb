@@ -13,7 +13,7 @@ class JayFlavoredMarkdownTest < Minitest::Test
   end
 
   #文字列の下行の '-' の入力が，2段階見出しの出力になる問題を検証するテスト
-  def test_that_it_should_get_hyphen_below_string
+  def test_that_it_should_get_two_level_heading
     assert_equal JayFlavoredMarkdownToPlainTextConverter.new("aaa\n-").content, "1.1 aaa"
   end
 
