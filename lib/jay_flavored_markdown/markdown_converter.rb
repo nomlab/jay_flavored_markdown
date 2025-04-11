@@ -17,7 +17,7 @@
 
 #  gemfile = File.expand_path("../../Gemfile", __FILE__)
 
-#  if File.exists?(gemfile + ".lock")
+#  if File.exist?(gemfile + ".lock")
 #    ENV["BUNDLE_GEMFILE"] = gemfile
 #    require "bundler/setup"
 #    Bundler.require
